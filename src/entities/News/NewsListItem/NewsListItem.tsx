@@ -5,11 +5,11 @@ import ListItemText from '@mui/material/ListItemText';
 import { ReturnComponentType } from 'shared/types';
 import { ControlledRating, CustomList, CustomText, Header } from 'shared/ui';
 
-type NewsLitItemPropsType = {
+type NewsListItemPropsType = {
   listItemTitle?: string;
 };
 
-export const NewsListItem: FC<NewsLitItemPropsType> = ({
+export const NewsListItem: FC<NewsListItemPropsType> = ({
   listItemTitle = 'hello',
 }): ReturnComponentType => {
   return (

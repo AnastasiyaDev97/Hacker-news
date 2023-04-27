@@ -1,1 +1,1 @@
-export { NewsListItem } from 'entities/News/NewsListItem/NewsListItem';
+export { NewsListItem } from './NewsListItem/NewsListItem';
