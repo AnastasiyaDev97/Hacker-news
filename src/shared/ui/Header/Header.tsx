@@ -22,7 +22,7 @@ export const Header: FC = (): ReturnComponentType => {
             sx={{
               mr: 2,
               ml: 2,
-              display: { xs: 'none', md: 'flex' },
+              display: 'flex' /* { xs: 'none', md: 'flex' } */,
               fontFamily: 'monospace',
               fontWeight: 700,
 
@@ -33,20 +33,7 @@ export const Header: FC = (): ReturnComponentType => {
             Hacker News
           </Typography>
 
-          {/*  <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-          </Box> */}
-
-          <Typography
+          {/*   <Typography
             variant="h5"
             noWrap
             component="a"
@@ -63,7 +50,7 @@ export const Header: FC = (): ReturnComponentType => {
             }}
           >
             Hacker News
-          </Typography>
+          </Typography> */}
         </Toolbar>
       </Container>
     </AppBar>

@@ -6,7 +6,7 @@ import { ReturnComponentType, WithChildrenType } from 'shared/types';
 
 export const Layout = ({ children }: WithChildrenType): ReturnComponentType => (
   <>
-    <Container fixed /*  maxWidth="sm" */>
+    <Container fixed>
       <Header />
       {children}
     </Container>
