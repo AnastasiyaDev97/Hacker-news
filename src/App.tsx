@@ -1,7 +1,8 @@
-import "./App.css";
+import { ReturnComponentType } from 'shared/types';
+import './App.css';
 
-function App() {
+const App = (): ReturnComponentType => {
   return <></>;
-}
+};
 
 export default App;
