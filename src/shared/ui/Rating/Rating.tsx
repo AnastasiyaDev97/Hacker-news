@@ -2,8 +2,7 @@ import { useState } from 'react';
 
 import Rating from '@mui/material/Rating';
 
-import { NullableType } from 'shared/types/NullableType';
-import { ReturnComponentType } from 'shared/types/ReturnComponentType';
+import { NullableType, ReturnComponentType } from 'shared/types';
 
 export const ControlledRating = (): ReturnComponentType => {
   const [value, setValue] = useState<NullableType<number>>(2);

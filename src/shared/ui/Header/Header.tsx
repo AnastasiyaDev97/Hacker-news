@@ -3,7 +3,7 @@ import { FC } from 'react';
 import Typography from '@mui/material/Typography';
 import type { TypographyTypeMap } from '@mui/material/Typography';
 
-import { ReturnComponentType } from 'shared/types/ReturnComponentType';
+import { ReturnComponentType } from 'shared/types';
 
 type HeaderPropsType = {
   title: string;
