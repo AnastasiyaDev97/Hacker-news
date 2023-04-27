@@ -10,6 +10,7 @@ export const ControlledRating = (): ReturnComponentType => {
   return (
     <Rating
       name="simple-controlled"
+      size="small"
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);
