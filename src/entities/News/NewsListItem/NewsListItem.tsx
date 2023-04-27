@@ -5,17 +5,17 @@ import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 
 import { ReturnComponentType } from 'shared/types';
-import { ControlledRating, CustomListItem, Header } from 'shared/ui';
+import { ControlledRating, CustomListItem } from 'shared/ui';
 
 type NewsListItemPropsType = {
-  listItemTitle?: string;
+  newsTitle?: string;
   commentsCount?: number;
   newsDate?: string;
   authorName?: string;
 };
 
 export const NewsListItem: FC<NewsListItemPropsType> = ({
-  listItemTitle = 'NewsName',
+  newsTitle = 'NewsName',
   commentsCount = 20,
   newsDate = '2015-11-18',
   authorName = 'nick',
@@ -23,11 +23,7 @@ export const NewsListItem: FC<NewsListItemPropsType> = ({
   return (
     <CustomListItem>
       <ListItemText
-        primary={
-          <>
-            <Header title={listItemTitle} variant="h6" component="h6" />
-          </>
-        }
+        primary={<Typography component="h3">{newsTitle}</Typography>}
         secondary={
           <>
             <Typography>{authorName}</Typography>
