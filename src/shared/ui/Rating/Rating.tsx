@@ -1,9 +1,13 @@
-import Rating from "@mui/material/Rating";
-import { useState } from "react";
-import { NullableType } from "shared/types/NullableType";
+import { useState } from 'react';
 
-export const ControlledRating = () => {
+import Rating from '@mui/material/Rating';
+
+import { NullableType } from 'shared/types/NullableType';
+import { ReturnComponentType } from 'shared/types/ReturnComponentType';
+
+export const ControlledRating = (): ReturnComponentType => {
   const [value, setValue] = useState<NullableType<number>>(2);
+
   return (
     <Rating
       name="simple-controlled"
