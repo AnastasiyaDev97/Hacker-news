@@ -7,8 +7,13 @@ import type {
   FetchBaseQueryMeta,
 } from '@reduxjs/toolkit/query/react';
 
+const baseUrl =
+  import.meta.env.MODE === 'development'
+    ? 'https://hacker-news.firebaseio.com/v0/'
+    : import.meta.env.VITE_BASE_URL;
+
 const CLIENT_API_OPTIONS = {
-  baseUrl: `${import.meta.env.VITE_BASE_URL}`,
+  baseUrl,
 };
 
 export const clientAPI = createApi({
@@ -17,7 +22,7 @@ export const clientAPI = createApi({
     ...CLIENT_API_OPTIONS,
     credentials: 'include',
   }),
-  tagTypes: ['News', 'Comments'],
+  tagTypes: ['News'],
   endpoints: () => ({}),
 });
 
@@ -29,6 +34,6 @@ export type builderType = EndpointBuilder<
     Record<string, unknown>,
     FetchBaseQueryMeta
   >,
-  'News' | 'Comments',
+  'News',
   'clientAPI'
 >;
